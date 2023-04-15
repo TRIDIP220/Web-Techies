@@ -1,0 +1,72 @@
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-collegeStreet</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+    <style>
+.footer {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   height: 10%;
+   width: 100%;
+   background-color: red;
+   color: white;
+   text-align: center;
+}
+
+.r{
+    background:url(/static/images/Library.jpg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    text-align: center;
+}
+        
+    </style>
+</head>
+<body>
+
+<header>
+    <a href="{% url 'index' %}" class="logo"><i class="fas fa-book-reader"></i>E-collegeStreet</a>
+    <nav class="navbar">
+        <ul>
+            <li><a class="active" href="{% url 'index' %}">Home</a></li>
+            <li><a href="{% url 'about' %}">About</a></li>
+            <li><a href="{% url 'contact' %}">Contact</a></li>
+            <li><a href="{% url 'signup' %}">Student/Teacher Signup</a></li>
+            <li><a href="{% url 'login' %}">Student/Teacher Login</a></li>
+            <li><a href="{% url 'login_admin' %}">Manager Login</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="r" id="home">
+    <h1 style="background-color : blueviolet ;color:aliceblue ;font-size: 50px;">E-CollegeStreet</h1>
+    <h3 style="color: brown;"><marquee><h3 style="font-size: 20px;">An application for Sharing educational Resources</h3></marquee></h3>
+    <div class="shape"></div>
+</section>
+
+<div class="footer">
+
+    <div class="box">
+         <h2>quick links</h2>
+        <a href="{% url 'index' %}"><h3>home</h3></a>
+        <a href="{% url 'about' %}"><h3>about</h3></a>
+        <a href="{% url 'contact' %}"><h3>contact</h3></a>
+   </div>
+
+  </div>
+ 
+</div>
+
+</body>
+</html>
