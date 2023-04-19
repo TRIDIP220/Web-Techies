@@ -74,7 +74,7 @@ First clone the repository from Github and switch to the new directory:
     $ git clone git@github.com/USERNAME/{{ project_name }}.git
     $ cd {{ project_name }}
     
-    ### Backend
+  ### Backend
 - `django` for building backend logic using Python
 - `djangorestframework` for building a REST API on top of Django
 - `django-webpack-loader` for rendering the bundled frontend assets
