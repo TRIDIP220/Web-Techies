@@ -74,8 +74,6 @@ First clone the repository from Github and switch to the new directory:
     $ git clone git@github.com/USERNAME/{{ project_name }}.git
     $ cd {{ project_name }}
     
-Activate the virtualenv for your project.
-    
     ### Backend
 - `django` for building backend logic using Python
 - `djangorestframework` for building a REST API on top of Django
@@ -96,8 +94,10 @@ Activate the virtualenv for your project.
   `python manage.py migrate`
 - Run the project:
   `python manage.py runserver`
-- Open a browser and go to `http://localhost:8000` to see the project running
+- Open a browser and go to `http://localhost:8000` to see the project running . 
 
+Activate the virtualenv for your project.
+    
 Install project dependencies:
 
     $ pip install -r requirements/local.txt
