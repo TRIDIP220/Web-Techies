@@ -79,11 +79,10 @@ First clone the repository from Github and switch to the new directory:
 - `djangorestframework` for building a REST API on top of Django
 - `django-webpack-loader` for rendering the bundled frontend assets
 - `django-js-reverse` for easy handling of Django URLs on JS
-- `psycopg2` for using PostgreSQL database
+- `sqlite` for using SQLite database
 - `sentry-sdk` for error monitoring
 - `python-decouple` for reading environment variables on settings files
 - `celery` for background worker tasks
-- `django-debreach` for additional protection against BREACH attack
 - `whitenoise` and `brotlipy` for serving static assets
 
 #### Run the backend app
@@ -94,7 +93,6 @@ First clone the repository from Github and switch to the new directory:
   `python manage.py migrate`
 - Run the project:
   `python manage.py runserver`
-- Open a browser and go to `http://localhost:8000` to see the project running . 
 
 Activate the virtualenv for your project.
     
