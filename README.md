@@ -5,6 +5,10 @@ Topics:A mobile app that provides free access to educational resources, such as 
 
 # Django python Boilerplate
 
+[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.0-4baaaa.svg)](code_of_conduct.md)
+[![License: MIT](https://img.shields.io/github/license/vintasoftware/django-react-boilerplate.svg)](LICENSE.txt)
+
+
 ### Main features
 
 * Separated dev and production settings
@@ -72,6 +76,28 @@ First clone the repository from Github and switch to the new directory:
     
 Activate the virtualenv for your project.
     
+    ### Backend
+- `django` for building backend logic using Python
+- `djangorestframework` for building a REST API on top of Django
+- `django-webpack-loader` for rendering the bundled frontend assets
+- `django-js-reverse` for easy handling of Django URLs on JS
+- `psycopg2` for using PostgreSQL database
+- `sentry-sdk` for error monitoring
+- `python-decouple` for reading environment variables on settings files
+- `celery` for background worker tasks
+- `django-debreach` for additional protection against BREACH attack
+- `whitenoise` and `brotlipy` for serving static assets
+
+#### Run the backend app
+- With the virtualenv enabled, go to the `backend` directory
+- Create the migrations for `users` app: 
+  `python manage.py makemigrations`
+- Run the migrations:
+  `python manage.py migrate`
+- Run the project:
+  `python manage.py runserver`
+- Open a browser and go to `http://localhost:8000` to see the project running
+
 Install project dependencies:
 
     $ pip install -r requirements/local.txt
